@@ -59,6 +59,11 @@ socket.on('new_message', function(msg) {
   scrollChatToBottom();
 });
 
+socket.on('client_error', function(errString) {
+  println('[client_error]:', errString);
+  alert('[client_error] ' + errString);
+});
+
 socket.on('unconfirmed_deposit_change', function(payload) {
   println('[unconfirmed_deposit_change] payload: ', toJSON(payload));
 });
