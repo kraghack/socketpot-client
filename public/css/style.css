@@ -1,0 +1,52 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  font-size: 12px;
+}
+
+.left, .right {
+  flex-grow: 1;
+  width: 50%;
+  padding: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.messages {
+  flex-grow: 1;
+}
+.chat-footer {
+  margin: 10px 0;
+}
+.chat-input {
+  font-size: 20px;
+}
+
+.left {
+  overflow-y: scroll;
+}
+
+.chat-input {
+  width: 100%;
+}
+
+.messages {
+  border: 5px solid goldenrod;
+  overflow-y: scroll;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.log-box {
+  max-height: 100px;
+  overflow-y: auto;
+}

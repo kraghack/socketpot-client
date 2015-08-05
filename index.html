@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="public/css/normalize.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      Logged events: <span class="log-count">0</span>
+    </div>
+    <div class="right">
+      <ul class="messages"></ul>
+      <div class="chat-footer">
+        <input class="chat-input" type="text" placeholder="Enter your message...">
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/socket.io-client/socket.io.js"></script>
+  <script src="public/js/jquery-1.11.3.js"></script>
+  <script src="public/js/lodash.js"></script>
+  <script src="public/js/immutable.js"></script>
+  <script src="public/js/react.js"></script>
+  <script src="public/js/immstruct.js"></script>
+  <script src="public/js/omniscient.js"></script>
+  <script src="app.js"></script>
+</body>
